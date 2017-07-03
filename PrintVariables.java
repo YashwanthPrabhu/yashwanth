@@ -21,14 +21,17 @@ public class PrintVariables {
 			}
 			else if(sum>0)
 			{
+				if(sum<100)
+				{
 				for(int j=0;j<sum;j++)
 				{
 					System.out.print(str.substring(index,index+1));
 				}
+				}
 				index=i;
 				sum=0;
 			}
-			if(i==len-1)
+			if(i==len-1&&sum<=99)
 			{
 				for(int j=0;j<sum;j++)
 				{
